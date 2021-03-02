@@ -40,10 +40,27 @@ print("nombres = ", nombres)
 print("*nombres = ", *nombres)
 
 def puiss_etoile(puissance, *nombres):
+  print("----")
   print(f" puissance : {puissance}")
   print(f" nombres : {nombres}")
+  print("----")
   return [i**puissance for i in nombres]
 
 print(f" puissance etoile : {puiss_etoile(2,1,2,3)}")
 
 assert puiss_etoile(2,4,5) == [16, 25]
+
+def puiss_etoileV2(*nombres):
+  print("----")
+  print(f" valeurs: {nombres}")
+  pui, *derniers = nombres
+  print(f" pui : {pui}")
+  print(f" nombres : {derniers}")
+  print("----")
+  return [i**pui for i in derniers]
+
+print(f" puissance etoile V2 : {puiss_etoileV2(2,1,2,3)}")
+
+assert puiss_etoileV2(2,4,5) == [16, 25]
+
+# -- 3) -- #

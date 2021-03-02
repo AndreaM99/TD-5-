@@ -31,4 +31,6 @@ def puiss(x,liste):
 puiss(2,[1,2,3])
 print(puiss(2,[1,2,3]))
 
+assert puiss(2, [4,5]) == [16, 25] # assert stop la fonction si c'est vérifier 
+
 # -- 2) -- #

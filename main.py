@@ -39,6 +39,8 @@ print("puissance = ",puissance)
 print("nombres = ", nombres)
 print("*nombres = ", *nombres)
 
+#/!\ VERSION D'ESSAI /!\#
+
 def puiss_etoile(puissance, *nombres):
   print("----")
   print(f" puissance : {puissance}")
@@ -49,6 +51,8 @@ def puiss_etoile(puissance, *nombres):
 print(f" puissance etoile : {puiss_etoile(2,1,2,3)}")
 
 assert puiss_etoile(2,4,5) == [16, 25]
+
+#/!\ VRAI VERSION /!\#
 
 def puiss_etoileV2(*nombres):
   print("----")
@@ -64,3 +68,10 @@ print(f" puissance etoile V2 : {puiss_etoileV2(2,1,2,3)}")
 assert puiss_etoileV2(2,4,5) == [16, 25]
 
 # -- 3) -- #
+b = 1,2
+a = 1,2,3
+*a,c = 0, *b
+
+
+print(f" somme3 : {somme3(*a)}")
+print(f" somme2 : {somme2(*a)}")

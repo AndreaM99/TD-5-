@@ -69,9 +69,11 @@ assert puiss_etoileV2(2,4,5) == [16, 25]
 
 # -- 3) -- #
 b = 1,2
-a = 1,2,3
+a = 1, 2, 3
+print(a)
 *a,c = 0, *b
+print(*a,c)
+# z = 0, *b, 8, (*"azerty",58)
 
-
-print(f" somme3 : {somme3(*a)}")
-print(f" somme2 : {somme2(*a)}")
+#print(f" somme3 : {somme3(*a)}") # ne marche pas car on a que deux éléments 
+#print(" somme2 : ", somme2(*a)) # marche car on a 2 éléments dans a

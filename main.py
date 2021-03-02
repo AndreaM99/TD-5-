@@ -34,3 +34,16 @@ print(puiss(2,[1,2,3]))
 assert puiss(2, [4,5]) == [16, 25] # assert stop la fonction si c'est vérifier 
 
 # -- 2) -- #
+puissance, *nombres = 2, 1, 2, 3
+print("puissance = ",puissance)
+print("nombres = ", nombres)
+print("*nombres = ", *nombres)
+
+def puiss_etoile(puissance, *nombres):
+  print(f" puissance : {puissance}")
+  print(f" nombres : {nombres}")
+  return [i**puissance for i in nombres]
+
+print(f" puissance etoile : {puiss_etoile(2,1,2,3)}")
+
+assert puiss_etoile(2,4,5) == [16, 25]
